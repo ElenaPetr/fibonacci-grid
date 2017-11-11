@@ -28,6 +28,9 @@
 .fibImg:nth-child(6) {
 	background-color:#4682B4;
 }
+.fibImg:nth-child(7) {
+	background-color:#90EE90;
+}
 .fibImg:last-child {
 	background-color:#2E8B57;
 }
