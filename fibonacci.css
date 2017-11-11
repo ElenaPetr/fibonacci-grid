@@ -4,6 +4,10 @@
 .container {
 	width:1051px;
 	margin:0 auto;
+	position: relative;
+}
+.fibImg{
+	position: absolute;
 }
 
 .fibImg:first-child {

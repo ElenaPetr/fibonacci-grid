@@ -19,31 +19,19 @@ function fibonacci(n) {
 
       $(element[i]).width(size);
       $(element[i]).height(size);
-   }
-
-  var position2 = $(element[2]).offset(),
-      position3 = $(element[3]).offset(),
-      position4 = $(element[4]).offset(),
-      position5 = $(element[5]).offset(),
-      position6 = $(element[6]).offset();
      
-          position2.top -= 100;
-          position2.left += 50;
+var position = $(element[i]).offset();
 
-          position3.top -= 100;
-
-          position4.top -= 350;
-          position4.left += 150;
-
-          position5.top -= 350;
-
-          position6.top -= 1000;
-          position6.left += 400;
-
-    $(element[2]).offset(position2);
-    $(element[3]).offset(position3);
-    $(element[4]).offset(position4);
-    $(element[5]).offset(position5);
-    $(element[6]).offset(position6);
- 
+   if (i%2!=0){
+    
+      position.top += parseInt($(element[i]).width()); 
+     
+   }
+   else{
+    
+      position.left += parseInt($(element[i-1]).height()); 
+      
+   }
+   $(element[i]).offset(position);
+  }
  });
