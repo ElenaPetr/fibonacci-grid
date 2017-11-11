@@ -24,13 +24,13 @@ var position = $(element[i]).offset();
 
    if (i%2!=0){
 
-      position.top += parseInt($(element[i-1]).height()); 
+      position.top += $(element[i-1]).height(); 
    }
    else{
 
-      position.left += parseInt($(element[i-1]).width());   
+      position.left += $(element[i-1]).width();   
    }
-   
+
    $(element[i]).offset(position);
   }
  });
