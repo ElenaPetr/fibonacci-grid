@@ -14,11 +14,21 @@ function fibonacci(n) {
   var element = $('.fibImg');
  
   for (var i = 0; i < element.length;i++) {
+      var index = 1;
+      if (element.length>7)
+        { index = 0.382353;}
+      if (element.length>9)
+        { index = 0.1460674;}
+      if (element.length>11)
+        { index = 0.055794;}
 
-      var size = fibonacci(i)*50;
+
+      var size = fibonacci(i)*50*index;
+   
 
       $(element[i]).width(size);
       $(element[i]).height(size);
+
      
 var position = $(element[i]).offset();
 
@@ -32,5 +42,7 @@ var position = $(element[i]).offset();
    }
 
    $(element[i]).offset(position);
+
   }
+
  });

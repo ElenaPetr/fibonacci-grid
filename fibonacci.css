@@ -1,36 +1,28 @@
 *{
 	box-sizing: border-box;
+	margin: 0;
 }
 .container {
 	width:1051px;
-	margin:0 auto;
+	margin:10px auto;
 	position: relative;
 }
 .fibImg{
 	position: absolute;
 }
 
-.fibImg:first-child {
+.fibImg:first-child, .fibImg:nth-child(13), .fibImg:nth-child(6) {
 	background-color:#2E8B57;
-}
-.fibImg:nth-child(2) {
+} 
+.fibImg:nth-child(2),.fibImg:nth-child(7), .fibImg:nth-child(11) {
 	background-color:#90EE90;	
 }
-.fibImg:nth-child(3) {
+.fibImg:nth-child(3), .fibImg:nth-child(9), .fibImg:nth-child(12)  {
 	background-color:#9932CC;	
 }
-.fibImg:nth-child(4) {
+.fibImg:nth-child(4), .fibImg:nth-child(8) {
 	background-color:#B22222;	
 }
-.fibImg:nth-child(5) {
+.fibImg:nth-child(5), .fibImg:nth-child(10) {
 	background-color:#FFA500;
-}
-.fibImg:nth-child(6) {
-	background-color:#4682B4;
-}
-.fibImg:nth-child(7) {
-	background-color:#90EE90;
-}
-.fibImg:last-child {
-	background-color:#2E8B57;
 }
