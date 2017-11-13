@@ -19,12 +19,13 @@ function fibonacci(n) {
       if (element.length>9) index = 0.1460674;
       if (element.length>11) index = 0.055794;
       if (element.length>13) index = 0.02131146;
-
+      if (element.length>15) index = 0.00814026;
       // var index = 50
       // if (element.length>7) index = 19;
       // if (element.length>9) index = 7.5;
       // if (element.length>11) index = 2.85;
       // if (element.length>13) index = 1.04;
+      // if (element.length>13) index = 0.4;
 
          
        var size = fibonacci(i)*50*index;
