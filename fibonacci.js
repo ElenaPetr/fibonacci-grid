@@ -15,15 +15,20 @@ function fibonacci(n) {
  
   for (var i = 0; i < element.length;i++) {
       var index = 1;
-      if (element.length>7)
-        { index = 0.382353;}
-      if (element.length>9)
-        { index = 0.1460674;}
-      if (element.length>11)
-        { index = 0.055794;}
+      if (element.length>7) index = 0.382353;
+      if (element.length>9) index = 0.1460674;
+      if (element.length>11) index = 0.055794;
+      if (element.length>13) index = 0.02131146;
 
+      // var index = 50
+      // if (element.length>7) index = 19;
+      // if (element.length>9) index = 7.5;
+      // if (element.length>11) index = 2.85;
+      // if (element.length>13) index = 1.04;
 
-      var size = fibonacci(i)*50*index;
+         
+       var size = fibonacci(i)*50*index;
+       // var size = fibonacci(i)*index;
    
 
       $(element[i]).width(size);
